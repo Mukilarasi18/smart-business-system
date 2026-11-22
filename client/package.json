@@ -1,11 +1,6 @@
 {
-  "name": "smart-biz",
-  "scripts": {
-    "install-all": "npm i && npm i --prefix server && npm i --prefix client",
-    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
-    "seed": "npm run seed --prefix server",
-    "build": "npm run build --prefix client",
-    "start": "npm start --prefix server"
-  },
-  "devDependencies": { "concurrently": "^8.2.2" }
+  "name": "client", "private": true, "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build" },
+  "dependencies": { "react": "^18.3.1", "react-dom": "^18.3.1", "recharts": "^2.12.7" },
+  "devDependencies": { "@vitejs/plugin-react": "^4.3.1", "vite": "^5.4.0" }
 }
